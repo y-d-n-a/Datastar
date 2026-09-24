@@ -6,8 +6,8 @@
 		// https://data-star.dev/reference/overview#core-attributes
 
 		{
-			"trigger": "data-computed-<signal>=\"expression\"",
-			"contents": "data-computed-${1:signal}=\"$0\"",
+			"trigger": "data-computed:<signal>=\"expression\"",
+			"contents": "data-computed:${1:signal}=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Creates a read-only signal computed from an expression.",
@@ -19,10 +19,9 @@
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Creates a read-only signal computed from an expression.",
 		},
-
 		{
-			"trigger": "data-signals-<signal>=\"expression\"",
-			"contents": "data-signals-${1:signal}=\"$0\"",
+			"trigger": "data-signals:<signal>=\"expression\"",
+			"contents": "data-signals:${1:signal}=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Merges one or more signals into the existing signals.",
@@ -34,21 +33,27 @@
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Merges one or more signals into the existing signals.",
 		},
-
 		{
-			"trigger": "data-star-ignore",
-			"contents": "data-star-ignore",
+			"trigger": "data-ignore",
+			"contents": "data-ignore",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Ignores an element and its descendants when processing.",
+		},
+		{
+			"trigger": "data-json-signals",
+			"contents": "data-json-signals",
+			"annotation": "Datastar",
+			"kind": ["snippet", "a", "Attribute"],
+			"details": "Sets the text content of an element to a reactive JSON stringified version of signals. Useful when troubleshooting an issue.",
 		},
 
 		// DOM Attributes
 		// https://data-star.dev/reference/overview#dom-attributes
 
 		{
-			"trigger": "data-attr-<attr>=\"expression\"",
-			"contents": "data-attr-${1:attr}=\"$0\"",
+			"trigger": "data-attr:<attr>=\"expression\"",
+			"contents": "data-attr:${1:attr}=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Sets any HTML attribute value using expressions.",
@@ -62,8 +67,8 @@
 		},
 
 		{
-			"trigger": "data-bind-<signal>",
-			"contents": "data-bind-${1:signal}",
+			"trigger": "data-bind:<signal>",
+			"contents": "data-bind:${1:signal}",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Creates two-way data binding between a signal and an element’s value.",
@@ -77,8 +82,8 @@
 		},
 
 		{
-			"trigger": "data-class-<class>=\"expression\"",
-			"contents": "data-class-${1:class}=\"$0\"",
+			"trigger": "data-class:<class>=\"expression\"",
+			"contents": "data-class:${1:class}=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Adds or removes CSS classes based on expressions.",
@@ -95,8 +100,8 @@
 		// from HTML completions
 
 		{
-			"trigger": "data-on-abort=\"expression\"",
-			"contents": "data-on-abort=\"$0\"",
+			"trigger": "data-on:abort=\"expression\"",
+			"contents": "data-on:abort=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -109,8 +114,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-autocomplete=\"expression\"",
-			"contents": "data-on-autocomplete=\"$0\"",
+			"trigger": "data-on:autocomplete=\"expression\"",
+			"contents": "data-on:autocomplete=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -123,8 +128,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-autocompleteerror=\"expression\"",
-			"contents": "data-on-autocompleteerror=\"$0\"",
+			"trigger": "data-on:autocompleteerror=\"expression\"",
+			"contents": "data-on:autocompleteerror=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -137,8 +142,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-auxclick=\"expression\"",
-			"contents": "data-on-auxclick=\"$0\"",
+			"trigger": "data-on:auxclick=\"expression\"",
+			"contents": "data-on:auxclick=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -151,8 +156,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-blur=\"expression\"",
-			"contents": "data-on-blur=\"$0\"",
+			"trigger": "data-on:blur=\"expression\"",
+			"contents": "data-on:blur=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -165,8 +170,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-cancel=\"expression\"",
-			"contents": "data-on-cancel=\"$0\"",
+			"trigger": "data-on:cancel=\"expression\"",
+			"contents": "data-on:cancel=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -179,8 +184,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-canplay=\"expression\"",
-			"contents": "data-on-canplay=\"$0\"",
+			"trigger": "data-on:canplay=\"expression\"",
+			"contents": "data-on:canplay=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -193,8 +198,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-canplaythrough=\"expression\"",
-			"contents": "data-on-canplaythrough=\"$0\"",
+			"trigger": "data-on:canplaythrough=\"expression\"",
+			"contents": "data-on:canplaythrough=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -207,8 +212,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-change=\"expression\"",
-			"contents": "data-on-change=\"$0\"",
+			"trigger": "data-on:change=\"expression\"",
+			"contents": "data-on:change=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -221,8 +226,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-click=\"expression\"",
-			"contents": "data-on-click=\"$0\"",
+			"trigger": "data-on:click=\"expression\"",
+			"contents": "data-on:click=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -235,8 +240,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-close=\"expression\"",
-			"contents": "data-on-close=\"$0\"",
+			"trigger": "data-on:close=\"expression\"",
+			"contents": "data-on:close=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -249,8 +254,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-contextmenu=\"expression\"",
-			"contents": "data-on-contextmenu=\"$0\"",
+			"trigger": "data-on:contextmenu=\"expression\"",
+			"contents": "data-on:contextmenu=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -263,8 +268,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-copy=\"expression\"",
-			"contents": "data-on-copy=\"$0\"",
+			"trigger": "data-on:copy=\"expression\"",
+			"contents": "data-on:copy=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -277,8 +282,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-cuechange=\"expression\"",
-			"contents": "data-on-cuechange=\"$0\"",
+			"trigger": "data-on:cuechange=\"expression\"",
+			"contents": "data-on:cuechange=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -291,8 +296,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-dblclick=\"expression\"",
-			"contents": "data-on-dblclick=\"$0\"",
+			"trigger": "data-on:dblclick=\"expression\"",
+			"contents": "data-on:dblclick=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -305,8 +310,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-drag=\"expression\"",
-			"contents": "data-on-drag=\"$0\"",
+			"trigger": "data-on:drag=\"expression\"",
+			"contents": "data-on:drag=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -319,8 +324,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-dragend=\"expression\"",
-			"contents": "data-on-dragend=\"$0\"",
+			"trigger": "data-on:dragend=\"expression\"",
+			"contents": "data-on:dragend=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -333,8 +338,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-dragenter=\"expression\"",
-			"contents": "data-on-dragenter=\"$0\"",
+			"trigger": "data-on:dragenter=\"expression\"",
+			"contents": "data-on:dragenter=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -347,8 +352,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-dragexit=\"expression\"",
-			"contents": "data-on-dragexit=\"$0\"",
+			"trigger": "data-on:dragexit=\"expression\"",
+			"contents": "data-on:dragexit=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -361,8 +366,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-dragleave=\"expression\"",
-			"contents": "data-on-dragleave=\"$0\"",
+			"trigger": "data-on:dragleave=\"expression\"",
+			"contents": "data-on:dragleave=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -375,8 +380,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-dragover=\"expression\"",
-			"contents": "data-on-dragover=\"$0\"",
+			"trigger": "data-on:dragover=\"expression\"",
+			"contents": "data-on:dragover=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -389,8 +394,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-dragstart=\"expression\"",
-			"contents": "data-on-dragstart=\"$0\"",
+			"trigger": "data-on:dragstart=\"expression\"",
+			"contents": "data-on:dragstart=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -403,8 +408,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-drop=\"expression\"",
-			"contents": "data-on-drop=\"$0\"",
+			"trigger": "data-on:drop=\"expression\"",
+			"contents": "data-on:drop=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -417,8 +422,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-durationchange=\"expression\"",
-			"contents": "data-on-durationchange=\"$0\"",
+			"trigger": "data-on:durationchange=\"expression\"",
+			"contents": "data-on:durationchange=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -431,8 +436,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-emptied=\"expression\"",
-			"contents": "data-on-emptied=\"$0\"",
+			"trigger": "data-on:emptied=\"expression\"",
+			"contents": "data-on:emptied=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -445,8 +450,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-ended=\"expression\"",
-			"contents": "data-on-ended=\"$0\"",
+			"trigger": "data-on:ended=\"expression\"",
+			"contents": "data-on:ended=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -459,8 +464,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-error=\"expression\"",
-			"contents": "data-on-error=\"$0\"",
+			"trigger": "data-on:error=\"expression\"",
+			"contents": "data-on:error=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -473,8 +478,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-focus=\"expression\"",
-			"contents": "data-on-focus=\"$0\"",
+			"trigger": "data-on:focus=\"expression\"",
+			"contents": "data-on:focus=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -487,8 +492,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-focusin=\"expression\"",
-			"contents": "data-on-focusin=\"$0\"",
+			"trigger": "data-on:focusin=\"expression\"",
+			"contents": "data-on:focusin=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -501,8 +506,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-focusout=\"expression\"",
-			"contents": "data-on-focusout=\"$0\"",
+			"trigger": "data-on:focusout=\"expression\"",
+			"contents": "data-on:focusout=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -515,8 +520,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-input=\"expression\"",
-			"contents": "data-on-input=\"$0\"",
+			"trigger": "data-on:input=\"expression\"",
+			"contents": "data-on:input=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -529,8 +534,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-invalid=\"expression\"",
-			"contents": "data-on-invalid=\"$0\"",
+			"trigger": "data-on:invalid=\"expression\"",
+			"contents": "data-on:invalid=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -543,8 +548,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-keydown=\"expression\"",
-			"contents": "data-on-keydown=\"$0\"",
+			"trigger": "data-on:keydown=\"expression\"",
+			"contents": "data-on:keydown=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -557,8 +562,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-keypress=\"expression\"",
-			"contents": "data-on-keypress=\"$0\"",
+			"trigger": "data-on:keypress=\"expression\"",
+			"contents": "data-on:keypress=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -571,8 +576,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-keyup=\"expression\"",
-			"contents": "data-on-keyup=\"$0\"",
+			"trigger": "data-on:keyup=\"expression\"",
+			"contents": "data-on:keyup=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -585,8 +590,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-loadeddata=\"expression\"",
-			"contents": "data-on-loadeddata=\"$0\"",
+			"trigger": "data-on:loadeddata=\"expression\"",
+			"contents": "data-on:loadeddata=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -599,8 +604,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-loadedmetadata=\"expression\"",
-			"contents": "data-on-loadedmetadata=\"$0\"",
+			"trigger": "data-on:loadedmetadata=\"expression\"",
+			"contents": "data-on:loadedmetadata=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -613,8 +618,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-loadstart=\"expression\"",
-			"contents": "data-on-loadstart=\"$0\"",
+			"trigger": "data-on:loadstart=\"expression\"",
+			"contents": "data-on:loadstart=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -627,8 +632,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mousedown=\"expression\"",
-			"contents": "data-on-mousedown=\"$0\"",
+			"trigger": "data-on:mousedown=\"expression\"",
+			"contents": "data-on:mousedown=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -641,8 +646,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mouseenter=\"expression\"",
-			"contents": "data-on-mouseenter=\"$0\"",
+			"trigger": "data-on:mouseenter=\"expression\"",
+			"contents": "data-on:mouseenter=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -655,8 +660,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mouseleave=\"expression\"",
-			"contents": "data-on-mouseleave=\"$0\"",
+			"trigger": "data-on:mouseleave=\"expression\"",
+			"contents": "data-on:mouseleave=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -669,8 +674,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mousemove=\"expression\"",
-			"contents": "data-on-mousemove=\"$0\"",
+			"trigger": "data-on:mousemove=\"expression\"",
+			"contents": "data-on:mousemove=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -683,8 +688,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mouseout=\"expression\"",
-			"contents": "data-on-mouseout=\"$0\"",
+			"trigger": "data-on:mouseout=\"expression\"",
+			"contents": "data-on:mouseout=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -697,8 +702,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mouseover=\"expression\"",
-			"contents": "data-on-mouseover=\"$0\"",
+			"trigger": "data-on:mouseover=\"expression\"",
+			"contents": "data-on:mouseover=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -711,8 +716,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mouseup=\"expression\"",
-			"contents": "data-on-mouseup=\"$0\"",
+			"trigger": "data-on:mouseup=\"expression\"",
+			"contents": "data-on:mouseup=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -725,8 +730,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-mousewheel=\"expression\"",
-			"contents": "data-on-mousewheel=\"$0\"",
+			"trigger": "data-on:mousewheel=\"expression\"",
+			"contents": "data-on:mousewheel=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -739,8 +744,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-paste=\"expression\"",
-			"contents": "data-on-paste=\"$0\"",
+			"trigger": "data-on:paste=\"expression\"",
+			"contents": "data-on:paste=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -753,8 +758,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-pause=\"expression\"",
-			"contents": "data-on-pause=\"$0\"",
+			"trigger": "data-on:pause=\"expression\"",
+			"contents": "data-on:pause=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -767,8 +772,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-play=\"expression\"",
-			"contents": "data-on-play=\"$0\"",
+			"trigger": "data-on:play=\"expression\"",
+			"contents": "data-on:play=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -781,8 +786,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-playing=\"expression\"",
-			"contents": "data-on-playing=\"$0\"",
+			"trigger": "data-on:playing=\"expression\"",
+			"contents": "data-on:playing=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -795,8 +800,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-progress=\"expression\"",
-			"contents": "data-on-progress=\"$0\"",
+			"trigger": "data-on:progress=\"expression\"",
+			"contents": "data-on:progress=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -809,8 +814,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-ratechange=\"expression\"",
-			"contents": "data-on-ratechange=\"$0\"",
+			"trigger": "data-on:ratechange=\"expression\"",
+			"contents": "data-on:ratechange=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -823,8 +828,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-reset=\"expression\"",
-			"contents": "data-on-reset=\"$0\"",
+			"trigger": "data-on:reset=\"expression\"",
+			"contents": "data-on:reset=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -837,8 +842,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-resize=\"expression\"",
-			"contents": "data-on-resize=\"$0\"",
+			"trigger": "data-on:resize=\"expression\"",
+			"contents": "data-on:resize=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -851,8 +856,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-scroll=\"expression\"",
-			"contents": "data-on-scroll=\"$0\"",
+			"trigger": "data-on:scroll=\"expression\"",
+			"contents": "data-on:scroll=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -865,8 +870,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-seeked=\"expression\"",
-			"contents": "data-on-seeked=\"$0\"",
+			"trigger": "data-on:seeked=\"expression\"",
+			"contents": "data-on:seeked=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -879,8 +884,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-seeking=\"expression\"",
-			"contents": "data-on-seeking=\"$0\"",
+			"trigger": "data-on:seeking=\"expression\"",
+			"contents": "data-on:seeking=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -893,8 +898,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-select=\"expression\"",
-			"contents": "data-on-select=\"$0\"",
+			"trigger": "data-on:select=\"expression\"",
+			"contents": "data-on:select=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -907,8 +912,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-show=\"expression\"",
-			"contents": "data-on-show=\"$0\"",
+			"trigger": "data-on:show=\"expression\"",
+			"contents": "data-on:show=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -921,8 +926,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-sort=\"expression\"",
-			"contents": "data-on-sort=\"$0\"",
+			"trigger": "data-on:sort=\"expression\"",
+			"contents": "data-on:sort=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -935,8 +940,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-stalled=\"expression\"",
-			"contents": "data-on-stalled=\"$0\"",
+			"trigger": "data-on:stalled=\"expression\"",
+			"contents": "data-on:stalled=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -949,8 +954,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-submit=\"expression\"",
-			"contents": "data-on-submit=\"$0\"",
+			"trigger": "data-on:submit=\"expression\"",
+			"contents": "data-on:submit=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -963,8 +968,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-suspend=\"expression\"",
-			"contents": "data-on-suspend=\"$0\"",
+			"trigger": "data-on:suspend=\"expression\"",
+			"contents": "data-on:suspend=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -977,8 +982,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-timeupdate=\"expression\"",
-			"contents": "data-on-timeupdate=\"$0\"",
+			"trigger": "data-on:timeupdate=\"expression\"",
+			"contents": "data-on:timeupdate=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -991,8 +996,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-toggle=\"expression\"",
-			"contents": "data-on-toggle=\"$0\"",
+			"trigger": "data-on:toggle=\"expression\"",
+			"contents": "data-on:toggle=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -1005,8 +1010,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-volumechange=\"expression\"",
-			"contents": "data-on-volumechange=\"$0\"",
+			"trigger": "data-on:volumechange=\"expression\"",
+			"contents": "data-on:volumechange=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -1019,8 +1024,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-waiting=\"expression\"",
-			"contents": "data-on-waiting=\"$0\"",
+			"trigger": "data-on:waiting=\"expression\"",
+			"contents": "data-on:waiting=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -1033,8 +1038,8 @@
 			"details": "Attaches event listeners that execute expressions.",
 		},
 		{
-			"trigger": "data-on-<event>=\"expression\"",
-			"contents": "data-on-${1:event}=\"$0\"",
+			"trigger": "data-on:<event>=\"expression\"",
+			"contents": "data-on:${1:event}=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Attaches event listeners that execute expressions.",
@@ -1063,8 +1068,8 @@
 		},
 
 		{
-			"trigger": "data-ref-<signal>",
-			"contents": "data-ref-${1:signal}",
+			"trigger": "data-ref:<signal>",
+			"contents": "data-ref:${1:signal}",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Creates a signal reference to the DOM element.",
@@ -1105,8 +1110,8 @@
 		// https://data-star.dev/reference/overview#backend-attributes
 
 		{
-			"trigger": "data-indicator-<signal>",
-			"contents": "data-indicator-${1:signal}",
+			"trigger": "data-indicator:<signal>",
+			"contents": "data-indicator:${1:signal}",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "set value of <code>signal</code> to <code>true</code> while request is in flight",
@@ -1129,7 +1134,6 @@
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Adds custom validation to elements.",
 		},
-
 		{
 			"trigger": "data-on-intersect=\"expression\"",
 			"contents": "data-on-intersect=\"$0\"",
@@ -1138,14 +1142,6 @@
 			"details": "Runs an expression when the element intersects with the viewport.",
 		},
 		{
-			"trigger": "data-on=\"{intersect: expression}\"",
-			"contents": "data-on=\"{intersect: $0}\"",
-			"annotation": "Datastar",
-			"kind": ["snippet", "a", "Attribute"],
-			"details": "Runs an expression when the element intersects with the viewport.",
-		},
-
-		{
 			"trigger": "data-on-interval=\"expression\"",
 			"contents": "data-on-interval=\"$0\"",
 			"annotation": "Datastar",
@@ -1153,28 +1149,19 @@
 			"details": "Runs expressions at regular intervals.",
 		},
 		{
-			"trigger": "data-on=\"{interval: expression}\"",
-			"contents": "data-on=\"{interval: $0}\"",
+			"trigger": "data-on-signal-patch=\"expression\"",
+			"contents": "data-on-signal-patch=\"$0\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
-			"details": "Runs expressions at regular intervals.",
-		},
-
-		{
-			"trigger": "data-on-load=\"expression\"",
-			"contents": "data-on-load=\"$0\"",
-			"annotation": "Datastar",
-			"kind": ["snippet", "a", "Attribute"],
-			"details": "Runs expressions when elements are loaded into the DOM.",
+			"details": "Runs an expression whenever any signals are patched.",
 		},
 		{
-			"trigger": "data-on=\"{load: expression}\"",
-			"contents": "data-on=\"{load: $0}\"",
+			"trigger": "data-on-signal-patch-filter=\"{property: signal}\"",
+			"contents": "data-on-signal-patch-filter=\"{${1:}: $0}\"",
 			"annotation": "Datastar",
 			"kind": ["snippet", "a", "Attribute"],
-			"details": "Runs expressions when elements are loaded into the DOM.",
+			"details": "Accepts an object with include and/or exclude properties that are regular expressions.",
 		},
-
 		{
 			"trigger": "data-on-raf=\"expression\"",
 			"contents": "data-on-raf=\"$0\"",
@@ -1182,29 +1169,6 @@
 			"kind": ["snippet", "a", "Attribute"],
 			"details": "Runs expressions on requestAnimationFrame events.",
 		},
-		{
-			"trigger": "data-on=\"{raf: expression}\"",
-			"contents": "data-on=\"{raf: $0}\"",
-			"annotation": "Datastar",
-			"kind": ["snippet", "a", "Attribute"],
-			"details": "Runs expressions on requestAnimationFrame events.",
-		},
-
-		{
-			"trigger": "data-on-signal-change=\"expression\"",
-			"contents": "data-on-signal-change=\"$0\"",
-			"annotation": "Datastar",
-			"kind": ["snippet", "a", "Attribute"],
-			"details": "Runs expressions when signals change.",
-		},
-		{
-			"trigger": "data-on=\"{signal-change: expression}\"",
-			"contents": "data-on=\"{signal-change: $0}\"",
-			"annotation": "Datastar",
-			"kind": ["snippet", "a", "Attribute"],
-			"details": "Runs expressions when signals change.",
-		},
-
 		{
 			"trigger": "data-scroll-into-view=\"expression\"",
 			"contents": "data-scroll-into-view=\"$0\"",
